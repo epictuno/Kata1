@@ -1,14 +1,12 @@
 package kata1_jonayms;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.time.LocalDate;
 
 public class Kata1_JonayMS {
     
     public static void main(String[] args) {
-        Calendar dia=GregorianCalendar.getInstance();
-        dia.set(1949,9,24);
+        LocalDate dia=LocalDate.of(1949,5,12);
+        
         Person persona= new Person("Nombre",dia);
         System.out.print(persona.getName()+"tiene"+persona.getAge());
         
